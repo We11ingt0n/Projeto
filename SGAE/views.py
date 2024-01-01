@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def login(request):
     
-   return  HttpResponse('Login')
+   return  render(request,'SGAE\login.html')
 
 def home(request):
     
