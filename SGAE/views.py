@@ -2,19 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
-def login(request):
-    
-   return  render(request,'SGAE\login.html')
-
 def home(request):
     
-   return  HttpResponse('Home')
+   return  render(request,'SGAE\pages\home.html')
 
-def alunos(request):
-    
-   return  HttpResponse('Alunos')
 
-def financeiro(request):
-    
-   return  HttpResponse('Financeiro')
 
