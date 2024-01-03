@@ -1,16 +1,19 @@
 {% include "SGAE\partials\head.html"%}
 
 <body>
-{% include "SGAE\partials\header.html"%}
+    {% include "SGAE\partials\header.html"%}
+    {% include "SGAE\partials\search.html"%}
 
-    <div class="search-container">
-        <div class="container">
-            <form action="" class="search-form">
-                <input type="search" class="search-input" name="search">
-                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-            </form>
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include "SGAE\partials\card_ph_ab.html"%}
+            {% include "SGAE\partials\card_ph_b.html"%}
+            {% include "SGAE\partials\card_ph_a.html"%}
+
         </div>
-    </div>            
+    </main>
 </body>
+
+{% include "SGAE\partials\footer.html"%}
 
 </html>
